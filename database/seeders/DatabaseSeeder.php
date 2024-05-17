@@ -5,6 +5,11 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Category;
+use App\Models\Donatur;
+use App\Models\Fundraiser;
+use App\Models\Fundraising;
+use App\Models\Fundraising_phase;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -51,5 +56,12 @@ class DatabaseSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
+
+
+            User::factory(5)->create();
+            Fundraiser::factory(5)->create();
+            Donatur::factory(10)->create();
+            Fundraising::factory(10)->create();
+            Fundraising_phase::factory(10)->create();
     }
 }
