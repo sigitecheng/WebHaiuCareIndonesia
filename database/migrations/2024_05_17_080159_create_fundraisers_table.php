@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('fundraisers', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade'); // GAR DATA TIDKA CACAT
+            // $table->foreignId('user_id'); // GAR DATA TIDKA CACAT
             $table->boolean('is_active');
+            $table->softDeletes(); // DATA TIDAK AKAN TERHAPUS 100 PERSEN BAHKAN TETAP ADA 
             $table->timestamps();
         });
     }

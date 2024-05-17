@@ -23,11 +23,16 @@ class Fundraising extends Model
 
     public function donatur()
     {
-        return $this->belongsTo(Donatur::class);
+        return $this->hasMany(Donatur::class);
     }
 
-    public function fundraiising_phase()
+    public function fundraising_phase()
     {
         return $this->hasMany(Fundraising_phase::class);
+    }
+
+    public function fundraising_withdrawals()
+    {
+        return $this->hasMany(fundraising_withdrawals::class);
     }
 }

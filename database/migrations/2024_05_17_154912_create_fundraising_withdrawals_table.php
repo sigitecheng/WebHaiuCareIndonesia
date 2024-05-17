@@ -11,17 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('fundraisings', function (Blueprint $table) {
+        Schema::create('fundraising_withdrawals', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('fundraising_id')->constrained()->onDelete('cascade');
             $table->foreignId('fundraiser_id')->constrained()->onDelete('cascade');
-            $table->foreignId('category_id')->constrained()->onDelete('cascade');
-            $table->boolean('is_active');
-            $table->boolean('has_finished');
-            $table->string('name');
-            $table->string('slug');
-            $table->string('thumbnail')->nullable();
-            $table->text('about');
-            $table->integer('target_amount');
+            $table->boolean('has_received');
+            $table->boolean('has_set');
+            $table->integer('amount_requested');
+            $table->integer('amount_received');
+            $table->string('bank_name');
+            $table->string('bank_account_name');
+            $table->string('bank_account_number');
+            $table->string('proof');
             $table->softDeletes(); // DATA TIDAK AKAN TERHAPUS 100 PERSEN BAHKAN TETAP ADA 
             $table->timestamps();
         });
@@ -32,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('fundraisings');
+        Schema::dropIfExists('fundraising_withdrawals');
     }
 };

@@ -9,6 +9,7 @@ use App\Models\Donatur;
 use App\Models\Fundraiser;
 use App\Models\Fundraising;
 use App\Models\Fundraising_phase;
+use App\Models\Fundraising_withdrawals;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -63,5 +64,6 @@ class DatabaseSeeder extends Seeder
             Donatur::factory(10)->create();
             Fundraising::factory(10)->create();
             Fundraising_phase::factory(10)->create();
+            Fundraising_withdrawals::factory(10)->create();
     }
 }

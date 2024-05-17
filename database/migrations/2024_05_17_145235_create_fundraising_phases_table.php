@@ -14,10 +14,11 @@ return new class extends Migration
         Schema::create('fundraising_phases', function (Blueprint $table) {
             
             $table->id();
-            $table->foreignId('fundraising_id');
+            $table->foreignId('fundraising_id')->constrained()->onDelete('cascade');
             $table->string('name');
             $table->boolean('photo');
             $table->text('notes');
+            $table->softDeletes(); // DATA TIDAK AKAN TERHAPUS 100 PERSEN BAHKAN TETAP ADA 
             $table->timestamps();
             
         });

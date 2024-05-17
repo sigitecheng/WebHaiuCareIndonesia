@@ -17,7 +17,7 @@ class FundraiserFactory extends Factory
     public function definition(): array
     {
         return [
-            'user_id' => mt_rand(1, 8),
+            'user_id' => mt_rand(1, 3),
             'is_active' => $this->faker->boolean,
             // 'is_active' => example->is_active,
             //
