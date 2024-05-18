@@ -19,7 +19,11 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin_dashboard.be_dashboard.dashboard.index',[
+        'title' => 'Admin Dashboard',
+        'title_halaman' => 'Halaman Dashboard',
+
+    ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Fundraising extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $guarded = ['id'];
 
@@ -23,7 +24,12 @@ class Fundraising extends Model
 
     public function donatur()
     {
-        return $this->hasMany(Donatur::class);
+        return $this->hasMany(Donatur::class)->where('is_paid', 1);
+    }
+
+    public function totalReachedAmount()
+    {
+        return $this->donaturs()->sum('total_amount');
     }
 
     public function fundraising_phase()
@@ -31,7 +37,7 @@ class Fundraising extends Model
         return $this->hasMany(Fundraising_phase::class);
     }
 
-    public function fundraising_withdrawals()
+    public function withdrawals()
     {
         return $this->hasMany(fundraising_withdrawals::class);
     }
