@@ -14,6 +14,14 @@ class FundraiserController extends Controller
     public function index()
     {
         //
+        return view('admin_dashboard.be_dashboard.fundraisers.index',[
+            'title' => 'Manage Fundraiser',
+            'title_halaman' => 'Halaman Fundraiser',
+
+            'data_fundraiser'  => Fundraiser::paginate(10),
+
+        ]); 
+        
     }
 
     /**

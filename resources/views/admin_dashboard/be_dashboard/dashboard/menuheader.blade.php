@@ -4,7 +4,7 @@
             
             <!--Logo-->
             <div class="col-sm-3 pl-0 text-center header-logo">
-               <div class="bg-blue-500 mr-3 pt-3 pb-2 mb-0 h-12">
+               <div class="bg-indigo-700 mr-3 pt-3 pb-2 mb-0 h-12">
                     <h4 class="text-white font-bold text-2xl"><a href="#" class="text-secondary logo"><i class="fab fa-ravelry mr-2 text-white"></i></a>HaiuCare Indonesia</h4>
                </div>
             </div>
@@ -127,10 +127,16 @@
                     <!--Menu Icons-->
 
                     <!--Search box and avatar-->
-                    <div class="col-sm-8 col-4 text-right flex-header-menu justify-content-end">
+                    <div class="flex col-sm-8 col-4 text-right flex-header-menu justify-content-end">
                         {{-- <div class="search-rounded mr-3">
                             <input type="text" class="form-control search-box" placeholder="Enter keywords.." />
                         </div> --}}
+                        <a href="/">
+                            <span class="menu-icon mr-2">
+                                <i class="text-blue-500 font-bold fas fa-edit"></i>
+                            </span>
+                        </a>
+                        
                         <a href="/logout">
                             <span class="menu-icon">
                                 <i class="text-red-800 font-bold fas fa-power-off"></i>

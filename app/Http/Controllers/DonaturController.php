@@ -14,6 +14,17 @@ class DonaturController extends Controller
     public function index()
     {
         //
+
+        return view('admin_dashboard.be_dashboard.donaturs.index',[
+            'title' => 'Manage Donatur',
+            'title_halaman' => 'Halaman Donatur',
+
+            'data_donatur'  => Donatur::paginate(10),
+
+        ]); 
+        
+
+        
     }
 
     /**

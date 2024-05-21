@@ -1,12 +1,17 @@
 
                 <!--Footer-->
-                <div class="row mt-5 mb-4 footer">
+                <div class="row mt-5 mb-4">
                     <div class="col-sm-8">
-                        <span>&copy; 2024 designed by <a class="text-theme" href="#">PT. HaiuCare Bangun Indonesia</a></span>
+                        <span>&copy; 2024 designed by <a class="text-primary font-bold" href="https://wa.me/6281321455855">PT. HaiuCare Bangun Indonesia</a></span>
                     </div>
                     <div class="col-sm-4 text-right">
-                        <a href="#" class="ml-2">Contact Us</a>
-                        <a href="#" class="ml-2">Support</a>
+                        <button class="font-bold py-2 px-6 bg-indigo-700 text-white rounded-full text-sm hover:bg-stone-600">
+                            <i class="fas fa-phone mr-2"></i>Contact Us
+                        </button>
+                        <button class="font-bold py-2 px-6 bg-indigo-700 text-white rounded-full text-sm hover:bg-stone-600">
+                            <i class="fas fa-hand mr-2"></i>Support 
+                        </button>
+                        
                     </div>
                 </div>
                 <!--Footer-->

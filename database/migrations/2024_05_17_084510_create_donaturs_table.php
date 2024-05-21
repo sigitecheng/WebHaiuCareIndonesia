@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignId('fundraising_id'); // Kolom fundraising_id
             $table->unsignedBigInteger('total_amount'); // Kolom total_amount sebagai integer
             $table->string('notes'); // Kolom notes sebagai varchar
+            $table->string('email')->unique(); // Kolom notes sebagai varchar
             $table->boolean('is_paid'); // Kolom is_paid sebagai boolean
             $table->string('proof'); // Kolom proof sebagai varchar
             $table->softDeletes(); // DATA TIDAK AKAN TERHAPUS 100 PERSEN BAHKAN TETAP ADA 

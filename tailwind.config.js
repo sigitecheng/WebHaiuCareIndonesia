@@ -12,6 +12,13 @@ export default {
 
     theme: {
         extend: {
+            fontSize: {
+                '2xl': '30px',
+            },
+            
+            button: {
+                'custom': 'font-bold py-1 px-6 bg-indigo-700 text-white rounded-full text-sm hover:bg-stone-600',
+            },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },

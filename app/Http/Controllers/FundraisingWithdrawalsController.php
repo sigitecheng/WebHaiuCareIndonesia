@@ -13,6 +13,13 @@ class FundraisingWithdrawalsController extends Controller
     public function index()
     {
         //
+        return view('admin_dashboard.be_dashboard.fundraisings.index',[
+            'title' => 'Manage Withdrawals',
+            'title_halaman' => 'Halaman Withdrawals',
+
+            'data_fundraisingphas'  => Fundraising_withdrawals::paginate(10),
+
+        ]); 
     }
 
     /**

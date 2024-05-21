@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('avatar');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->enum('is_admin', ['super_admin', 'fundraiser'])->default('fundraiser');
             $table->string('password');
             $table->softDeletes(); // DATA TIDAK AKAN TERHAPUS 100 PERSEN BAHKAN TETAP ADA 
             $table->rememberToken();

@@ -35,7 +35,8 @@ class DatabaseSeeder extends Seeder
                 // 'username' => 'adminadmin',
                 'email' => 'adminadmin@gmail.com',
                 'avatar' => 'hayuah',
-                'password' => bcrypt('adminadmin')
+                'password' => bcrypt('adminadmin'),
+                'is_admin' => 'super_admin',
             ]);
 
             Category::factory()->create([
@@ -68,11 +69,11 @@ class DatabaseSeeder extends Seeder
             ]);
 
 
-            User::factory(5)->create();
+            User::factory(15)->create();
             Fundraiser::factory(5)->create();
-            Donatur::factory(10)->create();
-            Fundraising::factory(10)->create();
-            Fundraising_phase::factory(10)->create();
+            Donatur::factory(25)->create();
+            Fundraising::factory(25)->create();
+            Fundraising_phase::factory(15)->create();
             Fundraising_withdrawals::factory(10)->create();
     }
 }

@@ -340,4 +340,5 @@
                     <!--/Recent sales-->
                 </div>
                 <!--Product summary-->
+                
 @include('admin_dashboard.be_dashboard.dashboard.footer')

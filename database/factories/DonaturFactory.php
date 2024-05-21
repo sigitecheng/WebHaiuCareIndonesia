@@ -24,6 +24,7 @@ class DonaturFactory extends Factory
             'notes' => $this->faker->sentence, // Generates a random sentence
             'is_paid' => $this->faker->boolean, // Generates a random boolean value
             'proof' => $this->faker->imageUrl(), // Generates a random image URL as proof
+            'email' => fake()->unique()->safeEmail(),
             //
         ];
     }
