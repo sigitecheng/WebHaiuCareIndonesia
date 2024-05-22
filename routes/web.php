@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DonaturController;
+use App\Http\Controllers\FeMakangratisController;
 use App\Http\Controllers\FundraiserController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -86,6 +87,9 @@ Route::resource('/fundraising_phases', FundraisingPhasController::class)->middle
 // ROUTE UNTUK PANGAMBILAN DATA KATEGORI 
 Route::resource('/withdrawals', FundraisingWithdrawalsController::class)->middleware('auth');
 
+// ===================================================================================
+// ROUTE UNTUK PANGAMBILAN DATA KATEGORI 
+Route::resource('/makangratis', FeMakangratisController::class);
 
 // MENAMBAHKAN FITUR MIDLEWARE -> PENGGUNAAN GUEST UNTUK HALAMAN YANG BELUM TERAUTENTIKASI ATAU TERDAFTAR
 // Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest'); // PENAMBAHAN FITUR GUEST 

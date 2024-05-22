@@ -1,15 +1,7 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/fe_css/output.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/fe_css/js/flickity.min.css" media="screen">
-    <title>{{ $title }}</title>
+@include('fe_dashboard.menu.header')
 
-</head>
+
+
 <body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
     <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
         <div class="header flex flex-col bg-gradient-to-b from-[#3CBBDB] to-[#EAD380] rounded-b-[50px] overflow-hidden">
@@ -26,6 +18,8 @@
                 <a href="/" class="w-10 h-10 flex shrink-0">
                     <!-- <img src="assets/images/icons/menu.svg" alt="icon"> -->
                     <img src="assets/css/fe_css/images/icons/login.svg" alt="icon">
+                    {{-- <img class="w-10 h-10 flex shrink-0" src="assets/css/fe_css/images/icons/login.svg" alt="icon"> --}}
+                
                 </a>
             </nav>
             <div class="mt-[30px] z-10">
@@ -42,7 +36,7 @@
             </div>
             <div class="main-carousel mt-[14px]">
                 <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
-                    <a href="category.html" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]">
+                    <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]">
                         <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
                             <img src="assets/css/fe_css/images/icons/icon natural disasters.png" alt="icon">
                         </div>
@@ -117,8 +111,8 @@
         </div>
         <div id="best-choices" class="mt-8 -mb-6">
             <div class="px-4 flex justify-between items-center">
-                <h2 class="font-bold text-lg">KitaBantu <br>Best Choices</h2>
-                <a href="" class="p-[6px_12px] rounded-full bg-[#E8E9EE] font-semibold text-sm">Explore All</a>
+                <h2 class="font-bold text-lg">HaiuCare Indonesia <br>Penggalangan Dana Untuk Sesama</h2>
+                {{-- <a href="" class="p-[6px_12px] rounded-full bg-[#E8E9EE] font-semibold text-sm">Explore All</a> --}}
             </div>
             <div class="main-carousel mt-[14px]">
                 <div class="px-2 first-of-type:pl-4 last-of-type:pr-4 mb-6">
@@ -129,8 +123,8 @@
                             </div>
                         </a>
                         <div class="flex flex-col gap-[6px]">
-                            <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none">Makanan Bergizi Warga Terdampar</a>
-                            <p class="text-xs leading-[18px]">Target <span class="font-bold text-[#FF7815]">Rp 800.000.000</span></p>
+                            <a href="details.html" class="font-bold line-clamp-2 hover:line-clamp-none">Makanan Gratis Warga Kurang Mampu</a>
+                            <p class="text-xs leading-[18px]">Target <span class="font-bold text-[#FF7815]">Rp 150.000.000</span></p>
                         </div>
                         <progress id="fund" value="32" max="100" class="w-full h-[6px] rounded-full overflow-hidden"></progress>
                     </div>
@@ -181,7 +175,7 @@
         </div>
         <div id="latest-fundrising" class="mt-8">
             <div class="px-4 flex justify-between items-center">
-                <h2 class="font-bold text-lg">Latests <br>Fundraisings</h2>
+                <h2 class="font-bold text-lg"><br>Program Kemanusiaan</h2>
                 <a href="" class="p-[6px_12px] rounded-full bg-[#E8E9EE] font-semibold text-sm">Explore All</a>
             </div>
             <div class="flex flex-col gap-4 mt-[14px] px-4">
@@ -263,11 +257,6 @@
         </div>
     </section>
 
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <script src="assets/css/fe_css/js/flickity.pkgd.min.js"></script>
-
-    <script src="assets/css/fe_css/js/main.js"></script>
-</body>
-</html>
+    
+@include('fe_dashboard.menu.footer')
