@@ -7,12 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 
-class Fe_makangratis extends Model
+class Tentangkami extends Model
 {
-    // use HasFactory;
-
     use HasFactory, SoftDeletes;
 
     protected $guarded = ['id'];
-
 }

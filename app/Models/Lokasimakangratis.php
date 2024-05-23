@@ -6,20 +6,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Fundraising_withdrawals extends Model
+
+class Lokasimakangratis extends Model
 {
     use HasFactory, SoftDeletes;
-    
+
     protected $guarded = ['id'];
 
-    public function fundraising()
-    {
-        return $this->belongsTo(Fundraising::class);
-    }
 
-    public function fundraiser()
+    public function daftarmitrarumahmakan()
     {
-        return $this->belongsTo(Fundraiser::class);
+        return $this->belongsTo(Daftarmitrarumahmakan::class);
     }
-
 }

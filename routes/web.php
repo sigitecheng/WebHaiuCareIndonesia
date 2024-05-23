@@ -11,6 +11,10 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\FundraisingController;
 use App\Http\Controllers\FundraisingPhasController;
 use App\Http\Controllers\FundraisingWithdrawalsController;
+use App\Http\Controllers\LokasimakangratisController;
+use App\Http\Controllers\TentangkamiController;
+use App\Http\Controllers\DaftarmitrarumahmakanController;
+use App\Models\Daftarmitrarumahmakan;
 use App\Models\Fundraiser;
 
 /*
@@ -90,6 +94,20 @@ Route::resource('/withdrawals', FundraisingWithdrawalsController::class)->middle
 // ===================================================================================
 // ROUTE UNTUK PANGAMBILAN DATA KATEGORI 
 Route::resource('/makangratis', FeMakangratisController::class);
+
+
+// ===================================================================================
+// ROUTE UNTUK PANGAMBILAN DATA KATEGORI 
+Route::resource('/tentangkami', TentangkamiController::class);
+
+// ===================================================================================
+// ROUTE UNTUK PANGAMBILAN DATA KATEGORI 
+Route::resource('/lokasimakangratis', LokasimakangratisController::class);
+
+// ===================================================================================
+// ROUTE UNTUK PANGAMBILAN DATA KATEGORI 
+Route::resource('/daftarmitrarumahmakan', DaftarmitrarumahmakanController::class);
+
 
 // MENAMBAHKAN FITUR MIDLEWARE -> PENGGUNAAN GUEST UNTUK HALAMAN YANG BELUM TERAUTENTIKASI ATAU TERDAFTAR
 // Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest'); // PENAMBAHAN FITUR GUEST 

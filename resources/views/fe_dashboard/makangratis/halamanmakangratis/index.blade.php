@@ -8,8 +8,10 @@
         rounded-b-[50px] overflow-hidden">
             <nav class="pt-5 px-3 flex justify-between items-center">
                 <ul>
-                    <div class="flex items-center gap-[10px]">
-                        <div class="w-10 h-10 flex shrink-0">
+                    <a href="/tentangkami">
+
+                        <div class="flex items-center gap-[10px]">
+                            <div class="w-10 h-10 flex shrink-0">
                                 <img src="assets/css/fe_css/images/icons/loc.svg" alt="icon">
                             </div>
                             <div class="flex flex-col text-white">
@@ -17,11 +19,14 @@
                                 <p class="font-semibold text-sm">Tentang Kami</p>
                             </div>
                         </div>
-            </ul>
+                    </a>
+                    </ul>
                 
                 <ul>
-                    <div class="flex items-center gap-[10px]">
-                        <div class="w-10 h-10 flex shrink-0">
+                    <a href="/lokasimakangratis">
+
+                        <div class="flex items-center gap-[10px]">
+                            <div class="w-10 h-10 flex shrink-0">
                                 <img src="assets/css/fe_css/images/icons/loc.svg" alt="icon">
                             </div>
                             <div class="flex flex-col text-white">
@@ -30,10 +35,13 @@
                             </div>
                         </div>
                     </ul>
-                
+                     </a>
+                    
                 <ul>
-                    <div class="flex items-center gap-[10px]">
-                        <div class="w-10 h-10 flex shrink-0">
+                    <a href="/daftarmitrarumahmakan">
+
+                        <div class="flex items-center gap-[10px]">
+                            <div class="w-10 h-10 flex shrink-0">
                                 <img src="assets/css/fe_css/images/icons/loc.svg" alt="icon">
                             </div>
                             <div class="flex flex-col text-white">
@@ -42,7 +50,8 @@
                             </div>
                         </div>
                     </ul>
-                
+                    
+                </a>
                 {{-- <a href="/" class="w-10 h-10 flex shrink-0"> --}}
                     <!-- <img src="assets/images/icons/menu.svg" alt="icon"> -->
                     {{-- <img src="assets/css/fe_css/images/icons/login.svg" alt="icon">
@@ -52,7 +61,7 @@
                 <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">Makan Gratis Untuk Semua<br></h1>
             </div>
             <div class="flex justify-center w-full">
-                <div class="w-1/5 h-fit overflow-hidden mt-2">
+                <div class="w-1/5 h-fit overflow-hidden mt-4 mb-4">
                     <img src="assets/css/fe_css/images/backgrounds/halamanmakangratis.svg" class="w-full h-full object-contain" alt="background">
                 </div>
             </div>
@@ -122,7 +131,7 @@
             </div>
              --}}
              <div class="px-4 flex justify-between items-center">
-                 <h2 class="font-semibold text-sm">Lokasi Makan Gratis</h2>
+                 {{-- <h2 class="font-semibold text-sm">Lokasi Makan Gratis</h2> --}}
                  {{-- <a href="" class="p-[6px_12px] rounded-full bg-[#E8E9EE] font-semibold text-sm">Explore All</a> --}}
              </div>
              
@@ -346,7 +355,7 @@
             
             <div class="px-4 flex justify-center items-center mt-4">
                 {{-- <h2 class="font-bold text-lg">Program <br>Makan Gratis</h2> --}}
-                <a href="" class="flex items-center p-[3px_6px] mr-2 ml-2 px-5 py-2 rounded-full bg-blue-500 hover:bg-stone-200 font-semibold text-sm text-white hover:text-stone-800">
+                <a href="/tentangkami" class="flex items-center p-[3px_6px] mr-2 ml-2 px-5 py-2 rounded-full bg-blue-500 hover:bg-stone-200 font-semibold text-sm text-white hover:text-stone-800">
                     <img class="w-5 h-5 mr-2" src="assets/css/fe_css/images/icons/distribusi.svg" alt="icon">
                     Tentang Kami
                 </a>
@@ -364,91 +373,8 @@
         {{-- ============== --}}
 
         
-        <div id="popular-fundrising" class="mt-8">
-            <div class="px-4 flex justify-center items-center">
-                <a href="">
-                    <h5 class="font-semibold ml-2 mr-2 text-sm">HaiuCare</h5>
-                </a>
-                <p>|</p>
-                <a href="">
-                    <h5 class="font-semibold ml-2 mr-2 text-sm">Syarat & Ketentuan</h5>
-                </a>
-                <p>|</p>
-                <a href="">
-                    <h5 class="font-semibold ml-2 mr-2 text-sm">Pusat Bantuan</h5>
-                </a>
-            
-                {{-- <a href="" class="p-[6px_12px] rounded-full bg-blue-500 hover:bg-stone-200 font-semibold text-sm text-white hover:text-stone-800">Ajukan Lokasi</a> --}}
-            </div>
-            <div class="main-carousel mt-[50px] ml-[100px] ">
-                
-                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
-                    {{-- <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]"> --}}
-                        <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3">
-                            <img src="assets/css/fe_css/images/icons/facebook.svg" alt="icon">
-                        </div>
-                        {{-- <span class="font-semibold text-center my-auto">Distribusi Makan Gratis</span> --}}
-                    </a>
-                </div>
+        @include('fe_dashboard.menu.menufooter')
 
-                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
-                    {{-- <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]"> --}}
-                        <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3">
-                            <img src="assets/css/fe_css/images/icons/twitter.svg" alt="icon">
-                        </div>
-                        {{-- <span class="font-semibold text-center my-auto">Distribusi Makan Gratis</span> --}}
-                    </a>
-                </div>
-               
-                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
-                    {{-- <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]"> --}}
-                        <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3">
-                            <img src="assets/css/fe_css/images/icons/tiktok.svg" alt="icon">
-                        </div>
-                        {{-- <span class="font-semibold text-center my-auto">Distribusi Makan Gratis</span> --}}
-                    </a>
-                </div>
-
-                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
-                    {{-- <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]"> --}}
-                        <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3">
-                            <img src="assets/css/fe_css/images/icons/email.svg" alt="icon">
-                        </div>
-                        {{-- <span class="font-semibold text-center my-auto">Distribusi Makan Gratis</span> --}}
-                    </a>
-                </div>
-                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
-                    {{-- <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]"> --}}
-                        <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3">
-                            <img src="assets/css/fe_css/images/icons/instagram.svg" alt="icon">
-                        </div>
-                        {{-- <span class="font-semibold text-center my-auto">Distribusi Makan Gratis</span> --}}
-                    </a>
-                </div>
-                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
-                    {{-- <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]"> --}}
-                        <div class="w-[40px] h-[40px] flex shrink-0 overflow-hidden ml-3">
-                            <img src="assets/css/fe_css/images/icons/youtube.svg" alt="icon">
-                        </div>
-                        {{-- <span class="font-semibold text-center my-auto">Distribusi Makan Gratis</span> --}}
-                    </a>
-                </div>
-
-        
-                
-               
-            </div>
-
-            <div class="px-4 flex justify-center items-center mt-[50px]">
-                <h2 class="font-bold text-sm text-blue-500 border-spacing-2">PT. HaiuCare Bangun Indonesia</h2>
-                {{-- <a href="" class="p-[6px_12px] rounded-full bg-blue-500 hover:bg-stone-200 font-semibold text-sm text-white hover:text-stone-800">Daftar Mitra</a> --}}
-            </div>
-                    <a href="/">
-                        <h6 class="text-center font-semibold text-sm text-stone-300"> @Copyright 2024 </h6>
-                    </a>
-        </div>
-
-        
         {{-- <div id="latest-fundrising" class="mt-8">
             <div class="px-4 flex justify-between items-center">
                 <h2 class="font-bold text-lg"><br>Program Kemanusiaan</h2>
@@ -509,7 +435,7 @@
             </div>
         </div> --}}
         
-        {{-- @include('fe_dashboard.menu.android') --}}
+        @include('fe_dashboard.menu.android')
 
         
         {{-- <div id="menu" class="max-w-[341px] w-full fixed bottom-[20px] p-3 flex items-center justify-between rounded-[30px] bg-[#1E2037] transform -translate-x-1/2 left-1/2">
