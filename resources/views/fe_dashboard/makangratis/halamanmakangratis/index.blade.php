@@ -4,7 +4,7 @@
 
 <body class="font-poppins text-[#292E4B] bg-[#F6F9FC]">
     <section class="max-w-[640px] w-full min-h-screen mx-auto flex flex-col bg-white overflow-x-hidden pb-[134px]">
-        <div class="header flex flex-col bg-gradient-to-b from-[#ADD8E6] to-[#0b4fb6]
+        <div class="header flex flex-col bg-gradient-to-b from-[#5bc7eb] to-[#0b4fb6]
         rounded-b-[50px] overflow-hidden">
             <nav class="pt-5 px-3 flex justify-between items-center">
                 <ul>
@@ -14,7 +14,7 @@
                             </div>
                             <div class="flex flex-col text-white">
                                 {{-- <p class="text-xs leading-[18px]">Tentang Program</p> --}}
-                                <p class="font-semibold text-sm">Tentang Program</p>
+                                <p class="font-semibold text-sm">Tentang Kami</p>
                             </div>
                         </div>
             </ul>
@@ -26,7 +26,7 @@
                             </div>
                             <div class="flex flex-col text-white">
                                 {{-- <p class="text-xs leading-[18px]">Location</p> --}}
-                                <p class="font-semibold text-sm">Lokasi</p>
+                                <p class="font-semibold text-sm">Lokasi Makan Gratis</p>
                             </div>
                         </div>
                     </ul>
@@ -38,7 +38,7 @@
                             </div>
                             <div class="flex flex-col text-white">
                                 {{-- <p class="text-xs leading-[18px]">Location</p> --}}
-                                <p class="font-semibold text-sm">Penyelenggara UMKM</p>
+                                <p class="font-semibold text-sm">Daftar UMKM</p>
                             </div>
                         </div>
                     </ul>
@@ -49,16 +49,156 @@
                 </a> --}}
             </nav>
             <div class="mt-[30px] z-10">
-                <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">Program Makan Gratis<br></h1>
+                <h1 class="font-extrabold text-2xl leading-[36px] text-white text-center">Makan Gratis Untuk Semua<br></h1>
             </div>
-            <div class="w-full h-fit overflow-hidden -mt-[33px]">
-                <img src="assets/css/fe_css/images/backgrounds/halamanmakangratis.svg" class="w-full h-full object-contain" alt="background">            
+            <div class="flex justify-center w-full">
+                <div class="w-1/5 h-fit overflow-hidden mt-2">
+                    <img src="assets/css/fe_css/images/backgrounds/halamanmakangratis.svg" class="w-full h-full object-contain" alt="background">
+                </div>
             </div>
+            {{-- <div class="text-center justify-center w-full h-fit overflow-hidden -mt-[5px]" style="width: 40%">
+                <img src="assets/css/fe_css/images/backgrounds/halamanmakangratis.svg" class="w-full h-full object-contain" alt="background" >            
+            </div> --}}
+
+            
+            {{-- <div id="latest-fundrising" class="mt-8">
+                <div class="px-4 flex justify-between items-center">
+                    <h2 class="font-semibold text-sm">Lokasi Makan Gratis</h2> --}}
+                    {{-- <a href="" class="p-[6px_12px] rounded-full bg-[#E8E9EE] font-semibold text-sm">Explore All</a> --}}
+                {{-- </div>
+                <div class="flex flex-col gap-4 mt-[14px] px-4">
+                    <a href="details.html" class="card">
+                        <div class="w-full border border-[#E8E9EE] flex items-center p-[14px] gap-3 rounded-2xl bg-white">
+                            <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
+                                <img src="assets/css/fe_css/images/thumbnails/th5.png" class="w-full h-full object-cover" alt="thumbnail">
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <p class="font-bold line-clamp-1 hover:line-clamp-none">Operasi Ginjal Kanan</p>
+                                <p class="text-xs leading-[18px]">Target <span class="font-bold text-[#FF7815]">Rp 55.000.000</span></p>
+                                <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
+                                    <p class="font-semibold sm:font-medium text-xs leading-[18px]">Putra Bangsa</p>
+                                    <div class="flex shrink-0">
+                                        <img src="assets/css/fe_css/images/icons/tick-circle.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="details.html" class="card">
+                        <div class="w-full border border-[#E8E9EE] flex items-center p-[14px] gap-3 rounded-2xl bg-white">
+                            <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
+                                <img src="assets/css/fe_css/images/thumbnails/th6.png" class="w-full h-full object-cover" alt="thumbnail">
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <p class="font-bold line-clamp-1 hover:line-clamp-none">Buku Edukasi Peduli Anak lorem ipsum</p>
+                                <p class="text-xs leading-[18px]">Target <span class="font-bold text-[#FF7815]">Rp 800.000.000</span></p>
+                                <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
+                                    <p class="font-semibold sm:font-medium text-xs leading-[18px]">Putra Bangsa</p>
+                                    <div class="flex shrink-0">
+                                        <img src="assets/css/fe_css/images/icons/tick-circle.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="details.html" class="card">
+                        <div class="w-full border border-[#E8E9EE] flex items-center p-[14px] gap-3 rounded-2xl bg-white">
+                            <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
+                                <img src="assets/css/fe_css/images/thumbnails/th7.png" class="w-full h-full object-cover" alt="thumbnail">
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <p class="font-bold line-clamp-1 hover:line-clamp-none">Bangun Desa Angga</p>
+                                <p class="text-xs leading-[18px]">Target <span class="font-bold text-[#FF7815]">Rp 18.500.000.000</span></p>
+                                <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
+                                    <p class="font-semibold sm:font-medium text-xs leading-[18px]">Putra Bangsa</p>
+                                    <div class="flex shrink-0">
+                                        <img src="assets/css/fe_css/images/icons/tick-circle.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+             --}}
+             <div class="px-4 flex justify-between items-center">
+                 <h2 class="font-semibold text-sm">Lokasi Makan Gratis</h2>
+                 {{-- <a href="" class="p-[6px_12px] rounded-full bg-[#E8E9EE] font-semibold text-sm">Explore All</a> --}}
+             </div>
+             
+             <div class="flex justify-center mt-[10px] ml-[10px] mr-[10px]">
+                <div class="w-full max-w-1/2 h-96 overflow-y-scroll border border-gray-300 rounded-lg ">
+                    <div id="latest-fundrising">
+                       <br>
+                        <div class="flex flex-col gap-4 mt-[14px] px-4">
+                            <a href="details.html" class="card">
+                                <div class="w-full border border-[#E8E9EE] flex items-center p-[14px] gap-3 rounded-2xl bg-white">
+                                    <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
+                                        <img src="https://picsum.photos/200/300/?fish" class="w-full h-full object-cover" alt="thumbnail">
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Cileunyi</p>
+                                        <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 55.000.000</span></p>
+                                        <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
+                                            {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px] text-green-500 badge ">Donasi</p> --}}
+                                            <p class="text-center badge bg-blue-500 px-5 py-1 badge-pill rounded-full text-white hover:bg-stone-200 hover:text-stone-800">Donasi</p>
+                                            {{-- <p class="text-center badge bg-blue-500 px-5 py-1 badge-pill rounded-full text-white hover:bg-stone-200 hover:text-stone-800">Donasi</p> --}}
+                                            
+                                            <div class="flex shrink-0 w-[20px] h-[20px] text-blue-800">
+                                                <img src="assets/css/fe_css/images/icons/inbox-donasi.svg" alt="icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="details.html" class="card">
+                                <div class="w-full border border-[#E8E9EE] flex items-center p-[14px] gap-3 rounded-2xl bg-white">
+                                    <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
+                                        <img src="assets/css/fe_css/images/thumbnails/th6.png" class="w-full h-full object-cover" alt="thumbnail">
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Lembang</p>
+                                        <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 60.000.000</span></p>
+                                        <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
+                                            <p class="text-center badge bg-blue-500 px-5 py-1 badge-pill rounded-full text-white hover:bg-stone-200 hover:text-stone-800">Donasi</p>
+                                            {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px]">Putra Bangsa</p> --}}
+                                            <div class="flex shrink-0 w-[20px] h-[20px] text-blue-800">
+                                                <img src="assets/css/fe_css/images/icons/inbox-donasi.svg" alt="icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="details.html" class="card">
+                                <div class="w-full border border-[#E8E9EE] flex items-center p-[14px] gap-3 rounded-2xl bg-white">
+                                    <div class="w-20 h-[90px] flex shrink-0 rounded-2xl overflow-hidden">
+                                        <img src="assets/css/fe_css/images/thumbnails/th7.png" class="w-full h-full object-cover" alt="thumbnail">
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Stasiun Bandung</p>
+                                        <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000.000</span></p>
+                                        <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
+                                            <p class="text-center badge bg-blue-500 px-5 py-1 badge-pill rounded-full text-white hover:bg-stone-200 hover:text-stone-800">Donasi</p>
+                                            {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px]">Putra Bangsa</p> --}}
+                                            <div class="flex shrink-0 w-[20px] h-[20px] text-blue-800">
+                                                <img src="assets/css/fe_css/images/icons/inbox-donasi.svg" alt="icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
             <div class="text-center">
                 <a href="">
                     <div class="flex items-center justify-center gap-[10px] mt-2">
                         
-                            <div class="flex flex-col text-stone-800 font-bold">
+                            <div class="flex flex-col text-stone-800 font-bold mt-3">
                                 {{-- <p class="text-xs leading-[18px]">Tentang Program</p> --}}
                                 <p class="text-center badge bg-blue-500 px-5 py-1 badge-pill rounded-full text-white hover:bg-stone-200 hover:text-stone-800">Donasi</p>
                             </div>
@@ -72,48 +212,7 @@
 
 
 
-        <div id="popular-fundrising" class="mt-8">
-            <div class="px-4 flex justify-between items-center">
-                <h2 class="font-bold text-lg">Program <br>Makan Gratis</h2>
-                <a href="" class="p-[6px_12px] rounded-full bg-blue-500 hover:bg-stone-200 font-semibold text-sm text-white hover:text-stone-800">Ajukan Lokasi</a>
-            </div>
-            <div class="main-carousel mt-[14px]">
-                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
-                    <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]">
-                        <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
-                            <img src="assets/css/fe_css/images/icons/icon natural disasters.png" alt="icon">
-                        </div>
-                        <span class="font-semibold text-center my-auto">Distribusi Makan Gratis</span>
-                    </a>
-                </div>
-                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
-                    <a href="category.html" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]">
-                        <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
-                            <img src="assets/css/fe_css/images/icons/icon medical treatment.png" alt="icon">
-                        </div>
-                        <span class="font-semibold text-center my-auto">Mitra UMKM</span>
-                    </a>
-                </div>
-                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
-                    <a href="category.html" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]">
-                        <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
-                            <img src="assets/css/fe_css/images/icons/icon medical treatment-1.png" alt="icon">
-                        </div>
-                        <span class="font-semibold text-center my-auto">Laporan Distribusi</span>
-                    </a>
-                </div>
-                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
-                    <a href="category.html" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]">
-                        <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
-                            <img src="assets/css/fe_css/images/icons/icon medical treatment-1.png" alt="icon">
-                        </div>
-                        <span class="font-semibold text-center my-auto">Daftar Menu Makanan</span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
+        
         <div id="best-choices" class="mt-8 -mb-6">
             <div class="px-4 flex justify-between items-center">
                 <h2 class="font-bold text-lg">HaiuCare Indonesia <br>Penggalangan Dana Untuk Sesama</h2>
@@ -182,6 +281,50 @@
         </div>
 
         {{-- ==================== --}}
+
+        <div id="popular-fundrising" class="mt-8">
+            <div class="px-4 flex justify-between items-center">
+                <h2 class="font-bold text-lg">Program <br>Makan Gratis</h2>
+                <a href="" class="p-[6px_12px] rounded-full bg-blue-500 hover:bg-stone-200 font-semibold text-sm text-white hover:text-stone-800">Ajukan Lokasi</a>
+            </div>
+            <div class="main-carousel mt-[14px]">
+                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
+                    <a href="/makangratis" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]">
+                        <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
+                            <img src="assets/css/fe_css/images/icons/icon natural disasters.png" alt="icon">
+                        </div>
+                        <span class="font-semibold text-center my-auto">Distribusi Makan Gratis</span>
+                    </a>
+                </div>
+                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
+                    <a href="category.html" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]">
+                        <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
+                            <img src="assets/css/fe_css/images/icons/icon medical treatment.png" alt="icon">
+                        </div>
+                        <span class="font-semibold text-center my-auto">Mitra UMKM</span>
+                    </a>
+                </div>
+                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
+                    <a href="category.html" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]">
+                        <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
+                            <img src="assets/css/fe_css/images/icons/icon medical treatment-1.png" alt="icon">
+                        </div>
+                        <span class="font-semibold text-center my-auto">Laporan Distribusi</span>
+                    </a>
+                </div>
+                <div class="px-2 first-of-type:pl-4 last-of-type:pr-4">
+                    <a href="category.html" class="fundrising-card rounded-[30px] w-[135px] min-h-[160px] flex flex-col items-center gap-3 p-5 border border-[#E8E9EE]">
+                        <div class="w-[60px] h-[60px] flex shrink-0 overflow-hidden">
+                            <img src="assets/css/fe_css/images/icons/icon medical treatment-1.png" alt="icon">
+                        </div>
+                        <span class="font-semibold text-center my-auto">Daftar Menu Makanan</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        {{-- ====================== --}}
 
         <div id="popular-fundrising" class="mt-8">
             <div class="px-4 flex justify-center items-center">
@@ -300,6 +443,9 @@
                 <h2 class="font-bold text-sm text-blue-500 border-spacing-2">PT. HaiuCare Bangun Indonesia</h2>
                 {{-- <a href="" class="p-[6px_12px] rounded-full bg-blue-500 hover:bg-stone-200 font-semibold text-sm text-white hover:text-stone-800">Daftar Mitra</a> --}}
             </div>
+                    <a href="/">
+                        <h6 class="text-center font-semibold text-sm text-stone-300"> @Copyright 2024 </h6>
+                    </a>
         </div>
 
         
@@ -362,7 +508,11 @@
                 </a>
             </div>
         </div> --}}
-        <div id="menu" class="max-w-[341px] w-full fixed bottom-[20px] p-3 flex items-center justify-between rounded-[30px] bg-[#1E2037] transform -translate-x-1/2 left-1/2">
+        
+        {{-- @include('fe_dashboard.menu.android') --}}
+
+        
+        {{-- <div id="menu" class="max-w-[341px] w-full fixed bottom-[20px] p-3 flex items-center justify-between rounded-[30px] bg-[#1E2037] transform -translate-x-1/2 left-1/2">
             <a href="" class="p-[14px_16px] flex items-center gap-[6px] rounded-full bg-blue-500">
                 <div class="flex shrink-0">
                     <img src="assets/css/fe_css/images/icons/heart.svg" alt="icon">
@@ -385,6 +535,7 @@
                 </div>
             </a>
         </div>
+         --}}
     </section>
 
 
