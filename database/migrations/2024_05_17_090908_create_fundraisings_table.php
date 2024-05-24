@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('fundraisings', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('fundraiser_id')->constrained()->onDelete('cascade');
-            $table->foreignId('category_id')->constrained()->onDelete('cascade');
+            $table->foreignId('fundraiser_id');
+            $table->foreignId('category_id');
             $table->boolean('is_active');
             $table->boolean('has_finished');
             $table->string('name');
