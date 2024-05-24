@@ -185,7 +185,7 @@
                                     </div>
                                     <div class="flex flex-col gap-1">
                                         <p class="font-bold line-clamp-1 hover:line-clamp-none">Makan Gratis Stasiun Bandung</p>
-                                        <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000.000</span></p>
+                                        <p class="text-xs leading-[18px]">Target <span class="font-bold text-blue-500">Rp 25.000.000</span></p>
                                         <div class="flex items-center gap-1 sm:flex-row-reverse sm:justify-end">
                                             <p class="text-center badge bg-blue-500 px-5 py-1 badge-pill rounded-full text-white hover:bg-stone-200 hover:text-stone-800">Donasi</p>
                                             {{-- <p class="font-semibold sm:font-medium text-xs leading-[18px]">Putra Bangsa</p> --}}

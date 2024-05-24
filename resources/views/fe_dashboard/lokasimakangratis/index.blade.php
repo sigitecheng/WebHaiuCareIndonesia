@@ -29,7 +29,7 @@
                     </div>
                     <div class="flex flex-col gap-1">
                         <p class="font-bold text-blue-800 border-spacing-5">{{ $data->kota }}, Kota Bandung, Jawa Barat</p>
-                        <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]">Rumah Makan : <span class="bg-blue-500 px-3 py-4 badge-pill rounded-full font-bold text-white">{{ $data->daftarmitrarumahmakan->namarumahmakan}}</span></p> 
+                        {{-- <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]">Rumah Makan : <span class="bg-blue-500 px-3 py-4 badge-pill rounded-full font-bold text-white">{{ $data->daftarmitrarumahmakan->nama_pemilik}}</span></p>  --}}
                         <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]">Alamat : <span class="font-bold text-blue-500">{{ $data->alamat}}</span></p> 
                         <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]">Kontak : <span class="font-bold text-green-500">{{ $data->kontak}}</span></p> 
                         <p class="text-sm2 font-semibold line-clamp-1 hover:line-clamp-none leading-[18px]">Jam Operational : <span class="font-bold text-red-500">{{ $data->jam_operasional}}</span></p> 
