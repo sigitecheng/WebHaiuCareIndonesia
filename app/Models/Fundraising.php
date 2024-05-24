@@ -17,9 +17,9 @@ class Fundraising extends Model
         return $this->belongsTo(Fundraiser::class);
     }
 
-    public function category()
+    public function kategorit()
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(Kategorit::class);
     }
 
     public function donatur()
